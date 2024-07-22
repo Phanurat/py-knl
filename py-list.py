@@ -11,6 +11,11 @@ def api_link():
 
 link_url = api_link()
 
-for url in link_url:
-    print(url)
-    time.sleep(1)
+def loop_link(link_url):
+    for url in link_url:
+        print(url)
+        time.sleep(1)
+        for url in range(1):
+            break
+
+loop_link(link_url)
